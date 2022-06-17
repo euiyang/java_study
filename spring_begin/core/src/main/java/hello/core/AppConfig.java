@@ -16,7 +16,6 @@ public class AppConfig {//구현 객체 생성부분을 담당, 생성자 주입
 
     @Bean
     public DiscountPolicy discountPolicy(){
-//        return new FixDiscountPolicy();
         return new RateDiscountPolicy();
     }
 

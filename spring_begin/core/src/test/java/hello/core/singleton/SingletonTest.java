@@ -46,12 +46,12 @@ public class SingletonTest {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
 
 
-        MemberService memberService1=ac.getBean("memberSerivce",MemberService.class);
-        MemberService memberService2=ac.getBean("memberSerivce",MemberService.class);
+        MemberService memberService1=ac.getBean("memberService",MemberService.class);
+        MemberService memberService2=ac.getBean("memberService",MemberService.class);
 
         System.out.println("memberservice1 =" + memberService1);
         System.out.println("memberservice2 ="+ memberService2);
 
-        Assertions.assertThat(memberService1).isNotSameAs(memberService2);
+        Assertions.assertThat(memberService1).isSameAs(memberService2);
     }
 }

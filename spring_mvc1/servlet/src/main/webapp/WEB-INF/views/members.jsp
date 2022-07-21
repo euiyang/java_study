@@ -13,7 +13,6 @@
  <th>username</th>
  <th>age</th>
  </thead>
-
  <tbody>
  <c:forEach var="item" items="${members}">
  <tr> <td>${item.id}</td>
@@ -22,7 +21,6 @@
  </tr>
  </c:forEach>
  </tbody>
-
 </table>
 </body>
 </html>

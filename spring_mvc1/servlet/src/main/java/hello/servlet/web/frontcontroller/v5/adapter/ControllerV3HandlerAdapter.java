@@ -20,6 +20,7 @@ public class ControllerV3HandlerAdapter implements MyHandlerAdapter {
 
     @Override
     public ModelView handle(HttpServletRequest request, HttpServletResponse response,Object handler) throws ServletException, IOException {
+        //Object로 들어왔기에 타입 캐스팅 필요
         ControllerV3 controller=(ControllerV3) handler;
 
         Map<String, String> paramMap = createParamMap(request);

@@ -1,2 +1,5 @@
-java_study/spring_mvc1/lecture_note_mvc1/
-java_study/spring_mvc2/lecture_note_mvc2/
+*.pdf
+spring/
+spring_begin/
+spring_mvc1/
+spring_mvc2/

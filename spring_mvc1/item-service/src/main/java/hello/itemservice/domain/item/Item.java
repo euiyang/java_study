@@ -1,8 +1,11 @@
 package hello.itemservice.domain.item;
 
 import lombok.Data;
+import lombok.Getter;
 
 @Data// 위험. 필요한 anntation만 추가하는 게 좋음.
+
+@Getter
 
 public class Item {
     private Long id;
